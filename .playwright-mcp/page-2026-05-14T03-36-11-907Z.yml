@@ -1,0 +1,176 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Next.js Starter" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e6]:
+        - link "홈" [ref=e7] [cursor=pointer]:
+          - /url: /
+        - link "컴포넌트" [ref=e8] [cursor=pointer]:
+          - /url: /#components
+        - link "GitHub" [ref=e9] [cursor=pointer]:
+          - /url: https://github.com/hackc/claude-nextjs-starters
+      - generic [ref=e10]:
+        - button "테마 변경" [disabled]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: Next.js 16 + React 19 + Tailwind v4
+        - heading "Next.js Starter" [level=1] [ref=e17]
+        - paragraph [ref=e18]: Next.js 16 App Router 기반의 모던 웹 스타터킷. shadcn/ui, Tailwind CSS v4, 다크모드를 기본 지원합니다.
+        - generic [ref=e19]:
+          - button "시작하기" [ref=e20]
+          - button "GitHub" [ref=e21]
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - heading "Button" [level=2] [ref=e25]
+          - paragraph [ref=e26]: 6가지 variant, 4가지 size
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - button "Default" [ref=e29]
+            - button "Secondary" [ref=e30]
+            - button "Outline" [ref=e31]
+            - button "Ghost" [ref=e32]
+            - button "Destructive" [ref=e33]
+            - button "Link" [ref=e34]
+          - generic [ref=e35]:
+            - button "Small" [ref=e36]
+            - button "Default" [ref=e37]
+            - button "Large" [ref=e38]
+            - button [ref=e39]:
+              - img
+            - button "Disabled" [disabled]
+      - generic [ref=e41]:
+        - heading "Badge & Avatar" [level=2] [ref=e42]
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: Default
+            - generic [ref=e46]: Secondary
+            - generic [ref=e47]: Outline
+            - generic [ref=e48]: Destructive
+          - generic [ref=e49]:
+            - generic [ref=e51]: SC
+            - generic [ref=e53]: HK
+            - generic [ref=e55]: AB
+      - generic [ref=e57]:
+        - heading "Alert" [level=2] [ref=e58]
+        - alert [ref=e59]:
+          - img [ref=e60]
+          - generic [ref=e62]: 안내
+          - generic [ref=e63]: 이것은 기본 알림 메시지입니다. 사용자에게 정보를 전달할 때 사용합니다.
+        - alert [ref=e64]:
+          - img [ref=e65]
+          - generic [ref=e67]: 오류 발생
+          - generic [ref=e68]: 작업을 처리하는 중 문제가 발생했습니다. 다시 시도해주세요.
+      - generic [ref=e70]:
+        - heading "Card" [level=2] [ref=e71]
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - generic [ref=e75]: 컴포넌트 라이브러리
+              - generic [ref=e76]: shadcn/ui + Radix UI
+            - paragraph [ref=e78]: 접근성을 고려한 헤드리스 UI 컴포넌트. Radix UI 프리미티브 기반으로 키보드 탐색과 스크린 리더를 완벽 지원합니다.
+            - button "더 보기" [ref=e80]
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e83]: 다크 모드
+              - generic [ref=e84]: next-themes 연동
+            - paragraph [ref=e86]: CSS 변수 기반의 테마 시스템. 헤더의 토글 버튼으로 라이트 / 다크 / 시스템 모드를 전환할 수 있습니다.
+            - button "테마 전환" [ref=e88]
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - generic [ref=e91]: 폼 & 유효성 검증
+              - generic [ref=e92]: react-hook-form + zod
+            - paragraph [ref=e94]: 업계 표준 라이브러리로 비제어 컴포넌트 방식의 고성능 폼을 구현합니다. 타입 안전한 zod 스키마로 유효성 검증을 처리합니다.
+            - button "예시 보기" [ref=e96]
+      - generic [ref=e98]:
+        - heading "Skeleton & Progress" [level=2] [ref=e99]
+        - generic [ref=e100]:
+          - paragraph [ref=e102]: 로딩 스켈레톤
+          - generic [ref=e109]:
+            - paragraph [ref=e110]: 진행률 표시
+            - generic [ref=e111]:
+              - generic [ref=e112]:
+                - generic [ref=e113]:
+                  - generic [ref=e114]: TypeScript
+                  - generic [ref=e115]: 95%
+                - progressbar [ref=e116]
+              - generic [ref=e118]:
+                - generic [ref=e119]:
+                  - generic [ref=e120]: React
+                  - generic [ref=e121]: 88%
+                - progressbar [ref=e122]
+              - generic [ref=e124]:
+                - generic [ref=e125]:
+                  - generic [ref=e126]: Next.js
+                  - generic [ref=e127]: 82%
+                - progressbar [ref=e128]
+      - generic [ref=e131]:
+        - generic [ref=e132]:
+          - heading "Form" [level=2] [ref=e133]
+          - paragraph [ref=e134]: react-hook-form + zod 유효성 검증
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - generic [ref=e138]: 문의하기
+            - generic [ref=e139]: 빈 채로 전송하면 zod 유효성 에러 메시지를 확인할 수 있습니다.
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - generic [ref=e144]: 이름
+                - textbox "이름" [ref=e145]:
+                  - /placeholder: 홍길동
+              - generic [ref=e146]:
+                - generic [ref=e147]: 이메일
+                - textbox "이메일" [ref=e148]:
+                  - /placeholder: hello@example.com
+            - generic [ref=e149]:
+              - generic [ref=e150]: 제목
+              - textbox "제목" [ref=e151]:
+                - /placeholder: 문의 제목을 입력해주세요
+            - generic [ref=e152]:
+              - generic [ref=e153]: 메시지
+              - textbox "메시지" [ref=e154]:
+                - /placeholder: 메시지를 입력해주세요...
+            - button "전송하기" [ref=e155]
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - heading "Interactive Components" [level=2] [ref=e159]
+          - paragraph [ref=e160]: Dialog, Sheet, Dropdown, Tabs, Toast
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - button "Dialog 열기" [ref=e163]
+            - button "Sheet 열기" [ref=e164]
+            - button "드롭다운" [ref=e165]
+            - button "Toast 트리거" [ref=e166]
+          - generic [ref=e167]:
+            - tablist [ref=e168]:
+              - tab "미리보기" [selected] [ref=e169]
+              - tab "코드" [ref=e170]
+              - tab "문서" [ref=e171]
+            - tabpanel "미리보기" [ref=e172]: 컴포넌트 미리보기 영역입니다.
+      - generic [ref=e174]:
+        - paragraph [ref=e175]: POWERED BY
+        - generic [ref=e176]:
+          - generic [ref=e177]: Next.js 16
+          - generic [ref=e178]: React 19
+          - generic [ref=e179]: TypeScript
+          - generic [ref=e180]: Tailwind CSS v4
+          - generic [ref=e181]: shadcn/ui
+          - generic [ref=e182]: lucide-react
+          - generic [ref=e183]: next-themes
+          - generic [ref=e184]: sonner
+          - generic [ref=e185]: react-hook-form
+          - generic [ref=e186]: zod
+          - generic [ref=e187]: usehooks-ts
+  - contentinfo [ref=e188]:
+    - paragraph [ref=e190]:
+      - text: © 2026 Next.js Starter. Built with
+      - link "Next.js" [ref=e191] [cursor=pointer]:
+        - /url: https://nextjs.org
+      - text: and
+      - link "shadcn/ui" [ref=e192] [cursor=pointer]:
+        - /url: https://ui.shadcn.com
+      - text: .
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e198] [cursor=pointer]:
+    - img [ref=e199]

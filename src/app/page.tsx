@@ -10,7 +10,7 @@ import { Progress } from "@/components/ui/progress"
 import { Separator } from "@/components/ui/separator"
 import { Skeleton } from "@/components/ui/skeleton"
 import { SITE_CONFIG } from "@/lib/constants"
-import { AlertCircle, CheckCircle, Info, Terminal } from "lucide-react"
+import { AlertCircle, Info, Terminal } from "lucide-react"
 
 export default function Home() {
   return (
@@ -27,9 +27,13 @@ export default function Home() {
               {SITE_CONFIG.description}
             </p>
             <div className="flex items-center justify-center gap-3 pt-2">
-              <Button size="lg">시작하기</Button>
-              <Button variant="outline" size="lg">
-                GitHub
+              <Button size="lg" asChild>
+                <a href="#components">시작하기</a>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <a href={SITE_CONFIG.url} target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </a>
               </Button>
             </div>
           </div>
@@ -58,7 +62,7 @@ export default function Home() {
               <Button size="sm">Small</Button>
               <Button size="default">Default</Button>
               <Button size="lg">Large</Button>
-              <Button size="icon"><Terminal /></Button>
+              <Button size="icon" aria-label="터미널 열기"><Terminal /></Button>
               <Button disabled>Disabled</Button>
             </div>
           </div>
@@ -192,7 +196,7 @@ export default function Home() {
               <Skeleton className="h-24 w-full" />
             </div>
             <div className="space-y-4">
-              <p className="text-sm font-medium text-muted-foreground">진행률 표시</p>
+              <p className="text-sm font-medium text-muted-foreground">진행률 표시 (예시)</p>
               <div className="space-y-3">
                 <div className="space-y-1">
                   <div className="flex justify-between text-xs text-muted-foreground">

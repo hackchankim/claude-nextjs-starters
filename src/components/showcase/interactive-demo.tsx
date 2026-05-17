@@ -4,6 +4,7 @@ import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogFooter,
@@ -45,7 +46,9 @@ export function InteractiveDemo() {
               </DialogDescription>
             </DialogHeader>
             <DialogFooter>
-              <Button variant="outline">취소</Button>
+              <DialogClose asChild>
+                <Button variant="outline">취소</Button>
+              </DialogClose>
               <Button onClick={() => toast.success("작업이 완료되었습니다.")}>확인</Button>
             </DialogFooter>
           </DialogContent>

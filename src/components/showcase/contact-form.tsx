@@ -53,7 +53,7 @@ export function ContactForm() {
               <FormItem>
                 <FormLabel>이메일</FormLabel>
                 <FormControl>
-                  <Input placeholder="hello@example.com" {...field} />
+                  <Input type="email" placeholder="hello@example.com" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>

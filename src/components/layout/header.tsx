@@ -4,7 +4,7 @@ import { NAV_ITEMS, SITE_CONFIG } from "@/lib/constants"
 import { Container } from "@/components/layout/container"
 import { ThemeToggle } from "@/components/theme/theme-toggle"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 
 export function Header() {
   return (
@@ -49,6 +49,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+              <SheetTitle className="sr-only">사이트 내비게이션</SheetTitle>
               <nav className="flex flex-col gap-4 pt-6">
                 {NAV_ITEMS.map((item) =>
                   item.external ? (

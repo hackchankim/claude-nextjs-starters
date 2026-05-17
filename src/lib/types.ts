@@ -4,7 +4,7 @@ export type PropsWithClassName<T = object> = T & {
   className?: string
 }
 
-export type PropsWithChildren<T = object> = T & {
+export type RequiredChildren<T = object> = T & {
   children: ReactNode
 }
 

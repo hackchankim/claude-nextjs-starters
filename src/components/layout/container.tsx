@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
-import type { PropsWithChildren, PropsWithClassName } from "@/lib/types"
+import type { RequiredChildren, PropsWithClassName } from "@/lib/types"
 
-type ContainerProps = PropsWithChildren<PropsWithClassName>
+type ContainerProps = RequiredChildren<PropsWithClassName>
 
 export function Container({ children, className }: ContainerProps) {
   return (

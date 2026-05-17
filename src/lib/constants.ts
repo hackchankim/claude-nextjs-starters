@@ -17,7 +17,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "컴포넌트", href: "/#components" },
   {
     label: "GitHub",
-    href: "https://github.com/hackchankim/claude-nextjs-starters",
+    href: SITE_CONFIG.url,
     external: true,
   },
 ]

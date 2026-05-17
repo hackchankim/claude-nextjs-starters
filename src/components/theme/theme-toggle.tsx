@@ -1,19 +1,14 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
 import { Moon, Sun, Monitor } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
+  const { theme, resolvedTheme, setTheme } = useTheme()
 
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
+  // resolvedTheme이 undefined이면 아직 마운트되지 않은 상태
+  if (!resolvedTheme) {
     return <Button variant="ghost" size="icon" aria-label="테마 변경" disabled />
   }
 
